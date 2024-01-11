@@ -9,19 +9,16 @@ export default function About() {
           <div>HEY,</div>
           <div className={styles.name}> I'AM RAYANE OUAANI</div>
           <div className={styles.poste}>A DEVELOPPEUR FULLSTACK</div>
+          <div className={styles.texte}>
+            I'm a young technology enthusiast. Always curious about
+            understanding how the world works, I delved into web development.
+            Each line of code I write is an exploration, an opportunity to
+            learn, and contribute to something new.
+          </div>
         </div>
         <div className={styles.img}>
           <img src="profile_picture.jpg" alt="" className={styles.picture} />
         </div>
-      </div>
-      <div className={styles.texte}>
-        I'm a young technology enthusiast. Always curious about understanding
-        how the world works, I delved into web development. Each line of code I
-        write is an exploration, an opportunity to learn, and contribute to
-        something new. Today, my goal is clear: to become a developer. The more
-        I immerse myself in this field, the more my thirst for learning grows.
-        Join me in this adventure where each day is an opportunity to evolve and
-        contribute to the digital future.
       </div>
       <div className={styles.title}>HARDSKILL</div>
       <div className={styles.hardSkill}>

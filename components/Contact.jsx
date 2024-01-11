@@ -82,19 +82,21 @@ export const Contact = () => {
   };
 
   return (
-    <div className={classNames(styles.container, styles.center)}>
-      <form ref={form} onSubmit={sendEmail} className={styles.form}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <span className={styles.error}>{errors.userName}</span>
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <span className={styles.error}>{errors.userEmail}</span>
-        <label>Message</label>
-        <textarea name="message" />
-        <span className={styles.error}>{errors.message}</span>
-        <input type="submit" value="Send" />
-      </form>
+    <div className={styles.container}>
+      <div className={classNames(styles.formulaire, styles.center)}>
+        <form ref={form} onSubmit={sendEmail} className={styles.form}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <span className={styles.error}>{errors.userName}</span>
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <span className={styles.error}>{errors.userEmail}</span>
+          <label>Message</label>
+          <textarea name="message" />
+          <span className={styles.error}>{errors.message}</span>
+          <input type="submit" value="Send" />
+        </form>
+      </div>
     </div>
   );
 };

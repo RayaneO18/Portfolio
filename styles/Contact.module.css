@@ -1,9 +1,12 @@
 .container {
+  background-color: #003870;
+}
+
+.formulaire{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 85.7vh;
-    background-color: #f0f0f0;
   }
   
   .center {
@@ -23,8 +26,10 @@
   }
   
   .form:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre au survol */
+    box-shadow: 0 8px 20px rgba(9, 255, 0, 0.6); /* Augmentation de l'ombre au survol */
   }
+  
+  
   
   .form label {
     display: block;
