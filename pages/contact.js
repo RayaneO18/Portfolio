@@ -6,9 +6,7 @@ import Footer from "@/components/Footer";
 export default function contact() {
   return (
     <div>
-      <Navbar></Navbar>
       <Contact></Contact>
-      <Footer></Footer>
     </div>
   );
 }

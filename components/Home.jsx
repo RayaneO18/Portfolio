@@ -7,9 +7,7 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <div className={styles.accueil}>
-      <Navbar />
       <About />
-      <Footer />
     </div>
   );
 };
