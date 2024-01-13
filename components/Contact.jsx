@@ -1,8 +1,9 @@
+import styles from "@/styles/Contact.module.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import styles from "@/styles/Contact.module.css";
 import classNames from "classnames";
 
+// Formulaire de contact
 export const Contact = () => {
   const form = useRef();
   const [errors, setErrors] = useState({
@@ -13,7 +14,6 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     const userName = form.current.user_name.value.trim();
     const userEmail = form.current.user_email.value.trim();
     const message = form.current.message.value.trim();

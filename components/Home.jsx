@@ -1,8 +1,6 @@
-import React from "react";
-import Navbar from "./Navbar";
 import styles from "@/styles/Home.module.css";
 import About from "./About";
-import Footer from "./Footer";
+import React from "react";
 
 const Home = () => {
   return (

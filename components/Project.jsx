@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import styles from "@/styles/Project.module.css";
 
+// Création de card
 export default function Project() {
   const [isModalOpen, setIsModalOpen] = useState({
     card1: false,
     card2: false,
-    // Ajoutez d'autres cartes au besoin
   });
 
+  // Ouverture de la modal
   const openModal = (card) => {
     setIsModalOpen((prevState) => ({
       ...prevState,
@@ -15,6 +16,7 @@ export default function Project() {
     }));
   };
 
+  //Fermeture de modal
   const closeModal = (card) => {
     setIsModalOpen((prevState) => ({
       ...prevState,
@@ -22,8 +24,8 @@ export default function Project() {
     }));
   };
 
+  // Empêche l'ouverture de la modal si le lien est cliqué
   const handleLinkClick = (e, card) => {
-    // Empêcher l'ouverture de la modal si le lien est cliqué
     if (e.target.tagName.toLowerCase() === "a") {
       return;
     }
@@ -64,6 +66,7 @@ export default function Project() {
         </a>
       </div>
 
+      {/* Première modal */}
       {isModalOpen.card1 && (
         <div
           className={styles.modalOverlay}
@@ -81,6 +84,7 @@ export default function Project() {
         </div>
       )}
 
+      {/* Deuxème modal */}
       {isModalOpen.card2 && (
         <div
           className={styles.modalOverlay}
