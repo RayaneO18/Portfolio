@@ -7,13 +7,15 @@ export default function About() {
       <div className={styles.container}>
         <div className={styles.meContainer}>
           <div>HEY,</div>
-          <div className={styles.name}> I'AM RAYANE OUAANI</div>
+          <div className={styles.name}> Je suis RAYANE OUAANI</div>
           <div className={styles.poste}>A DEVELOPPEUR FULLSTACK</div>
           <div className={styles.texte}>
-            I'm a young technology enthusiast. Always curious about
-            understanding how the world works, I delved into web development.
-            Each line of code I write is an exploration, an opportunity to
-            learn, and contribute to something new.
+            Je suis un jeune passionné de technologie. Toujours curieux de
+            comprendre comprendre comment le monde fonctionne, je me suis lancé
+            dans le développement web. Chaque ligne de code que j&apos;écris est
+            une exploration, une occasion d&apos;apprendre et de contribuer à
+            quelque chose de nouveau. D&apos;apprendre et de contribuer à
+            quelque chose de nouveau.
           </div>
         </div>
         <div className={styles.img}>
@@ -23,7 +25,7 @@ export default function About() {
       <div className={styles.title}>HARDSKILL</div>
       <div className={styles.hardSkill}>
         <div className={styles.html}>
-          <div>HTML</div>
+          <div className={styles.langue_name}>HTML</div>
           <img src="/langue/html.png" alt="" className={styles.logo} />
         </div>
         <div className={styles.css}>

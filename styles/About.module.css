@@ -24,6 +24,7 @@
   justify-content: flex-end;
   width: 325px;
   height: auto;
+  margin-right: 15px;
 }
 
 .texte {
@@ -40,8 +41,8 @@
 
 .title {
   display: flex;
-  justify-content: center;
   font-family: serif;
+  margin-left: 460px;
   font-size: 40px;
   margin-bottom: 20px;
   color: white ;
@@ -53,7 +54,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   justify-content: center;
-  gap: 20px; /* Ajoutez la valeur d'espacement souhaitée */
+  gap: 30px; /* Ajoutez la valeur d'espacement souhaitée */
   padding-bottom: 20px;
 }
 
