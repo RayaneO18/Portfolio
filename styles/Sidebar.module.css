@@ -1,0 +1,63 @@
+.sidebar {
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  backdrop-filter: blur(3px);
+}
+
+.navLinks {
+  height: 90%;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 28vh; 
+  color: white; 
+  text-align: center;
+  font-weight: bold;
+}
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.sidebar a:hover {
+  color: #602987 ;
+}
+.theme {
+  margin-top: 50px;
+  font-style: italic; 
+  cursor: default; 
+  cursor: pointer;
+}
+
+
+.iconLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26px;
+  margin-top: 80px;
+
+}
+
+.iconLink a {
+  margin: 10px;
+}
+.email{
+  margin-top: 10px;
+}
+
+
+
+
+@media (max-width: 960px) {
+  .rail {
+    display: none;
+  }
+}
+
