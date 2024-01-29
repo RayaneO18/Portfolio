@@ -1,11 +1,12 @@
-.all{
+.all {
   height: 100%;
+  padding-left: 88px;
+  
 }
-
 .container {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  padding-top: 10%;
 }
 
 .meContainer {
@@ -54,7 +55,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   justify-content: center;
-  gap: 30px; /* Ajoutez la valeur d'espacement souhaitée */
+  gap: 30px; 
   padding-bottom: 20px;
 }
 
@@ -67,7 +68,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #003870;
 }
 
 .projectCard {
@@ -126,9 +126,7 @@
   text-align: center;
 }
 
-.container {
-  background-color: #003870;
-}
+
 
 .formulaire{
     display: flex;
@@ -150,11 +148,11 @@
     width: 100%;
     box-sizing: border-box;
     margin: auto;
-    transition: box-shadow 0.3s ease; /* Ajout d'une animation de transition pour l'ombre */
+    transition: box-shadow 0.3s ease; 
   }
   
   .form:hover {
-    box-shadow: 0 8px 20px rgba(9, 255, 0, 0.6); /* Augmentation de l'ombre au survol */
+    box-shadow: 0 8px 20px rgba(9, 255, 0, 0.6); 
   }
   
   
@@ -175,8 +173,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    color: #333;
-    transition: box-shadow 0.3s ease; /* Ajout d'une animation de transition pour l'ombre */
+    color: #333; 
+    transition: box-shadow 0.3s ease;
   }
   
   .form input[type="submit"] {
@@ -184,7 +182,7 @@
     color: #fff;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Ajout d'animations pour le bouton de soumission */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
   
   .form input[type="submit"]:hover {
@@ -193,6 +191,6 @@
   }
   
   .form input[type="submit"]:active {
-    transform: translateY(1px); /* Ajout d'une légère animation au clic */
+    transform: translateY(1px);
   }
   

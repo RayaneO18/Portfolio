@@ -167,95 +167,99 @@ export default function About() {
           <img src="/langue/mysql.png" alt="" className={styles.logo} />
         </div>
       </div>
-      <div className={styles.container}>
-        <div
-          className={styles.projectCard}
-          onClick={(e) => handleLinkClick(e, "card1")}
-        >
-          {/* Styles de la première carte */}
-          <img src="MOVIZ.png" alt="" className={styles.projectImage} />
-          <h2 className={styles.projectName}>MyMoviz</h2>
-          <p className={styles.descriptionProject}>
-            Liste de films, via une API, avec un résumé ainsi que la note
-            moyenne donnée par le public
-          </p>
-          <a href="https://moviz-orcin.vercel.app" target="_blank">
-            Visiter le site
-          </a>
-        </div>
-
-        <div
-          className={styles.projectCard}
-          onClick={(e) => handleLinkClick(e, "card2")}
-        >
-          {/* Styles de la deuxième carte */}
-          <img src="MOVIZ.png" alt="" className={styles.projectImage} />
-          <h2 className={styles.projectName}>MyMoviz</h2>
-          <p className={styles.descriptionProject}>
-            Liste de films, via une API, avec un résumé ainsi que la note
-            moyenne donnée par le public
-          </p>
-          <a href="https://moviz-orcin.vercel.app" target="_blank">
-            Visiter le site
-          </a>
-        </div>
-
-        {/* Première modal */}
-        {isModalOpen.card1 && (
+      <section id="project">
+        <div className={styles.container}>
           <div
-            className={styles.modalOverlay}
-            onClick={() => closeModal("card1")}
+            className={styles.projectCard}
+            onClick={(e) => handleLinkClick(e, "card1")}
           >
-            <div
-              className={styles.modalContent}
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Contenu de la modal de la carte 1 */}
-              <h2>Modal Content - Card 1</h2>
-              <p>Contenu de la modal...</p>
-              <button onClick={() => closeModal("card1")}>
-                Fermer la modal
-              </button>
-            </div>
+            {/* Styles de la première carte */}
+            <img src="MOVIZ.png" alt="" className={styles.projectImage} />
+            <h2 className={styles.projectName}>MyMoviz</h2>
+            <p className={styles.descriptionProject}>
+              Liste de films, via une API, avec un résumé ainsi que la note
+              moyenne donnée par le public
+            </p>
+            <a href="https://moviz-orcin.vercel.app" target="_blank">
+              Visiter le site
+            </a>
           </div>
-        )}
 
-        {/* Deuxème modal */}
-        {isModalOpen.card2 && (
           <div
-            className={styles.modalOverlay}
-            onClick={() => closeModal("card2")}
+            className={styles.projectCard}
+            onClick={(e) => handleLinkClick(e, "card2")}
           >
-            <div
-              className={styles.modalContent}
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Contenu de la modal de la carte 2 */}
-              <h2>Modal Content - Card 2</h2>
-              <p>Contenu de la modal...</p>
-              <button onClick={() => closeModal("card2")}>
-                Fermer la modal
-              </button>
-            </div>
+            {/* Styles de la deuxième carte */}
+            <img src="MOVIZ.png" alt="" className={styles.projectImage} />
+            <h2 className={styles.projectName}>MyMoviz</h2>
+            <p className={styles.descriptionProject}>
+              Liste de films, via une API, avec un résumé ainsi que la note
+              moyenne donnée par le public
+            </p>
+            <a href="https://moviz-orcin.vercel.app" target="_blank">
+              Visiter le site
+            </a>
           </div>
-        )}
-      </div>
-      <div className={styles.container}>
-        <div className={classNames(styles.formulaire, styles.center)}>
-          <form ref={form} onSubmit={sendEmail} className={styles.form}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <span className={styles.error}>{errors.userName}</span>
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <span className={styles.error}>{errors.userEmail}</span>
-            <label>Message</label>
-            <textarea name="message" />
-            <span className={styles.error}>{errors.message}</span>
-            <input type="submit" value="Send" />
-          </form>
+
+          {/* Première modal */}
+          {isModalOpen.card1 && (
+            <div
+              className={styles.modalOverlay}
+              onClick={() => closeModal("card1")}
+            >
+              <div
+                className={styles.modalContent}
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* Contenu de la modal de la carte 1 */}
+                <h2>Modal Content - Card 1</h2>
+                <p>Contenu de la modal...</p>
+                <button onClick={() => closeModal("card1")}>
+                  Fermer la modal
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Deuxème modal */}
+          {isModalOpen.card2 && (
+            <div
+              className={styles.modalOverlay}
+              onClick={() => closeModal("card2")}
+            >
+              <div
+                className={styles.modalContent}
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* Contenu de la modal de la carte 2 */}
+                <h2>Modal Content - Card 2</h2>
+                <p>Contenu de la modal...</p>
+                <button onClick={() => closeModal("card2")}>
+                  Fermer la modal
+                </button>
+              </div>
+            </div>
+          )}
         </div>
-      </div>
+      </section>
+      <section id="contact">
+        <div className={styles.container}>
+          <div className={classNames(styles.formulaire, styles.center)}>
+            <form ref={form} onSubmit={sendEmail} className={styles.form}>
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <span className={styles.error}>{errors.userName}</span>
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <span className={styles.error}>{errors.userEmail}</span>
+              <label>Message</label>
+              <textarea name="message" />
+              <span className={styles.error}>{errors.message}</span>
+              <input type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
