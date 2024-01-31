@@ -167,81 +167,72 @@ export default function About() {
           <img src="/langue/mysql.png" alt="" className={styles.logo} />
         </div>
       </div>
+
+      {/* section Projet */}
       <section id="project">
-        <div className={styles.container}>
-          <div
-            className={styles.projectCard}
-            onClick={(e) => handleLinkClick(e, "card1")}
-          >
-            {/* Styles de la première carte */}
-            <img src="MOVIZ.png" alt="" className={styles.projectImage} />
-            <h2 className={styles.projectName}>MyMoviz</h2>
-            <p className={styles.descriptionProject}>
-              Liste de films, via une API, avec un résumé ainsi que la note
-              moyenne donnée par le public
-            </p>
-            <a href="https://moviz-orcin.vercel.app" target="_blank">
-              Visiter le site
-            </a>
-          </div>
+        <div className={styles.title}>PROJECT</div>
 
-          <div
-            className={styles.projectCard}
-            onClick={(e) => handleLinkClick(e, "card2")}
-          >
-            {/* Styles de la deuxième carte */}
-            <img src="MOVIZ.png" alt="" className={styles.projectImage} />
-            <h2 className={styles.projectName}>MyMoviz</h2>
-            <p className={styles.descriptionProject}>
-              Liste de films, via une API, avec un résumé ainsi que la note
-              moyenne donnée par le public
-            </p>
-            <a href="https://moviz-orcin.vercel.app" target="_blank">
-              Visiter le site
-            </a>
-          </div>
+        <div className={styles.cards_project}>
+          {/* Premiere card */}
+          <div className={styles.grid}>
+            <div className={styles.card}>
+              <h1 className={styles.card__header}>Moviz</h1>
+              <br />
 
-          {/* Première modal */}
-          {isModalOpen.card1 && (
-            <div
-              className={styles.modalOverlay}
-              onClick={() => closeModal("card1")}
-            >
-              <div
-                className={styles.modalContent}
-                onClick={(e) => e.stopPropagation()}
-              >
-                {/* Contenu de la modal de la carte 1 */}
-                <h2>Modal Content - Card 1</h2>
-                <p>Contenu de la modal...</p>
-                <button onClick={() => closeModal("card1")}>
-                  Fermer la modal
-                </button>
+              <img
+                className={styles.card__img}
+                src="MOVIZ.png"
+                alt="image Moviz"
+              />
+              <div className={styles.card__content}>
+                <h2 className={styles.card__header}>React/JS</h2>
+                <div className={styles.card__text}>
+                  <p className={styles.card__text}>
+                    Moviz est un site web dédié aux amateurs de cinéma, mettant
+                    en avant leurs films préférés grâce à l&apos;intégration
+                    d&apos;une API cinématographique.
+                  </p>
+                </div>
+                <a
+                  href="https://moviz-keet4f8j0-rayanes-projects-5ede2bce.vercel.app"
+                  target="_blank"
+                >
+                  <button className={styles.card__btn}>
+                    Explore <span>&rarr;</span>
+                  </button>
+                </a>
               </div>
             </div>
-          )}
+          </div>
+          {/* deuxieme card */}
+          <div className={styles.grid}>
+            <div className={styles.card}>
+              <h1 className={styles.card__header}>SearchJob</h1>
+              <br />
 
-          {/* Deuxème modal */}
-          {isModalOpen.card2 && (
-            <div
-              className={styles.modalOverlay}
-              onClick={() => closeModal("card2")}
-            >
-              <div
-                className={styles.modalContent}
-                onClick={(e) => e.stopPropagation()}
-              >
-                {/* Contenu de la modal de la carte 2 */}
-                <h2>Modal Content - Card 2</h2>
-                <p>Contenu de la modal...</p>
-                <button onClick={() => closeModal("card2")}>
-                  Fermer la modal
-                </button>
+              <img className={styles.card__img} src="JOB.png" alt="" />
+              <div className={styles.card__content}>
+                <h2 className={styles.card__header}>Symfony/PHP</h2>
+                <div className={styles.card__text}>
+                  <p>
+                    Ce site permet aux utilisateurs de consulter des offres
+                    d&apos;emploi et de postuler à ces offres. Les utilisateurs
+                    peuvent également créer un compte et publier des offres
+                    d&apos;emploi.
+                  </p>
+                </div>
+                <a href="https://searchjob.osc-fr1.scalingo.io" target="_blank">
+                  <button className={styles.card__btn}>
+                    Explore <span>&rarr;</span>
+                  </button>
+                </a>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </section>
+
+      {/* Page de contact */}
       <section id="contact">
         <div className={styles.container}>
           <div className={classNames(styles.formulaire, styles.center)}>
