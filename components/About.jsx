@@ -114,7 +114,7 @@ export default function About() {
         <div className={styles.meContainer}>
           <div>HEY,</div>
           <div className={styles.name}> Je suis RAYANE OUAANI</div>
-          <div className={styles.poste}>A DEVELOPPEUR FULLSTACK</div>
+          <div className={styles.poste}> DEVELOPPEUR FULLSTACK</div>
           <div className={styles.texte}>
             Je suis un jeune passionné de technologie. Toujours curieux de
             comprendre comprendre comment le monde fonctionne, je me suis lancé
