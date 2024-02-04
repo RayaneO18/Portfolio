@@ -4,35 +4,6 @@ import emailjs from "@emailjs/browser";
 import classNames from "classnames";
 
 export default function About() {
-  const [isModalOpen, setIsModalOpen] = useState({
-    card1: false,
-    card2: false,
-  });
-
-  // Ouverture de la modal
-  const openModal = (card) => {
-    setIsModalOpen((prevState) => ({
-      ...prevState,
-      [card]: true,
-    }));
-  };
-
-  //Fermeture de modal
-  const closeModal = (card) => {
-    setIsModalOpen((prevState) => ({
-      ...prevState,
-      [card]: false,
-    }));
-  };
-
-  // Empêche l'ouverture de la modal si le lien est cliqué
-  const handleLinkClick = (e, card) => {
-    if (e.target.tagName.toLowerCase() === "a") {
-      return;
-    }
-    openModal(card);
-  };
-
   const form = useRef();
   const [errors, setErrors] = useState({
     userName: "",
@@ -124,108 +95,119 @@ export default function About() {
             quelque chose de nouveau.
           </div>
         </div>
-        <div className={styles.img}>
-          <img src="profile_picture.jpg" alt="" className={styles.picture} />
+        <div>
+          <img
+            src="profile_picture.jpg"
+            alt=""
+            className={styles.profil_picture}
+          />
         </div>
       </div>
-      <div className={styles.title}>HARDSKILL</div>
-      <div className={styles.hardSkill}>
-        <div className={styles.html}>
-          <div className={styles.langue_name}>HTML</div>
-          <img src="/langue/html.png" alt="" className={styles.logo} />
-        </div>
-        <div className={styles.css}>
-          <div>CSS</div>
-          <img src="/langue/css.png" alt="" className={styles.logo} />
-        </div>
-        <div className={styles.js}>
-          <div>JavaScript</div>
-          <img src="/langue/js.png" alt="" className={styles.logo} />
-        </div>
-        <div className={styles.react}>
-          <div>React</div>
-          <img src="/langue/react.png" alt="" className={styles.logo} />
-        </div>
-        <div className={styles.nextjs}>
-          <div>Next.js</div>
-          <img src="/langue/nextjs.png" alt="" className={styles.logo} />
-        </div>
-        <div className={styles.typescript}>
-          <div>TypeScript</div>
-          <img src="/langue/typescript.png" alt="" className={styles.logo} />
-        </div>
-        <div className={styles.php}>
-          <div>PHP</div>
-          <img src="/langue/php.png" alt="" className={styles.logo} />
-        </div>
-        <div className={styles.symfony}>
-          <div>Symfony</div>
-          <img src="/langue/symfony.png" alt="" className={styles.logo} />
-        </div>
-        <div className={styles.mysql}>
-          <div>MySQL</div>
-          <img src="/langue/mysql.png" alt="" className={styles.logo} />
+      <div className={styles.hardskill}>
+        <div className={styles.title}>HARDSKILL</div>
+        <div className={styles.langue}>
+          <div className={styles.html}>
+            <div className={styles.langue_name}>HTML</div>
+            <img src="/langue/html.png" alt="" className={styles.logo} />
+          </div>
+          <div className={styles.css}>
+            <div>CSS</div>
+            <img src="/langue/css.png" alt="" className={styles.logo} />
+          </div>
+          <div className={styles.js}>
+            <div>JavaScript</div>
+            <img src="/langue/js.png" alt="" className={styles.logo} />
+          </div>
+          <div className={styles.react}>
+            <div>React</div>
+            <img src="/langue/react.png" alt="" className={styles.logo} />
+          </div>
+          <div className={styles.nextjs}>
+            <div>Next.js</div>
+            <img src="/langue/nextjs.png" alt="" className={styles.logo} />
+          </div>
+          <div className={styles.typescript}>
+            <div>TypeScript</div>
+            <img src="/langue/typescript.png" alt="" className={styles.logo} />
+          </div>
+          <div className={styles.php}>
+            <div>PHP</div>
+            <img src="/langue/php.png" alt="" className={styles.logo} />
+          </div>
+          <div className={styles.symfony}>
+            <div>Symfony</div>
+            <img src="/langue/symfony.png" alt="" className={styles.logo} />
+          </div>
+          <div className={styles.mysql}>
+            <div>MySQL</div>
+            <img src="/langue/mysql.png" alt="" className={styles.logo} />
+          </div>
         </div>
       </div>
 
       {/* section Projet */}
       <section id="project">
-        <div className={styles.title}>PROJECT</div>
+        <div className={styles.project}>
+          <div className={styles.title}>PROJECT</div>
 
-        <div className={styles.cards_project}>
-          {/* Premiere card */}
-          <div className={styles.grid}>
-            <div className={styles.card}>
-              <h1 className={styles.card__header}>Moviz</h1>
-              <br />
+          <div className={styles.cards_project}>
+            {/* Premiere card */}
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h1 className={styles.card__header}>Moviz</h1>
+                <br />
 
-              <img
-                className={styles.card__img}
-                src="MOVIZ.png"
-                alt="image Moviz"
-              />
-              <div className={styles.card__content}>
-                <h2 className={styles.card__header}>React/JS</h2>
-                <div className={styles.card__text}>
-                  <p className={styles.card__text}>
-                    Moviz est un site web dédié aux amateurs de cinéma, mettant
-                    en avant leurs films préférés grâce à l&apos;intégration
-                    d&apos;une API cinématographique.
-                  </p>
+                <img
+                  className={styles.card__img}
+                  src="MOVIZ.png"
+                  alt="image Moviz"
+                />
+                <div className={styles.card__content}>
+                  <h2 className={styles.card__header}>React/JS</h2>
+                  <div className={styles.card__text}>
+                    <p className={styles.card__text}>
+                      Moviz est un site web dédié aux amateurs de cinéma,
+                      mettant en avant leurs films préférés grâce à
+                      l&apos;intégration d&apos;une API cinématographique.
+                    </p>
+                  </div>
+                  <a
+                    href="https://moviz-keet4f8j0-rayanes-projects-5ede2bce.vercel.app"
+                    target="_blank"
+                  >
+                    <button className={styles.card__btn}>
+                      Explore <span>&rarr;</span>
+                    </button>
+                  </a>
                 </div>
-                <a
-                  href="https://moviz-keet4f8j0-rayanes-projects-5ede2bce.vercel.app"
-                  target="_blank"
-                >
-                  <button className={styles.card__btn}>
-                    Explore <span>&rarr;</span>
-                  </button>
-                </a>
               </div>
             </div>
-          </div>
-          {/* deuxieme card */}
-          <div className={styles.grid}>
-            <div className={styles.card}>
-              <h1 className={styles.card__header}>SearchJob</h1>
-              <br />
+            {/* deuxieme card */}
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h1 className={styles.card__header}>SearchJob</h1>
+                <br />
 
-              <img className={styles.card__img} src="JOB.png" alt="" />
-              <div className={styles.card__content}>
-                <h2 className={styles.card__header}>Symfony/PHP</h2>
-                <div className={styles.card__text}>
-                  <p>
-                    Ce site permet aux utilisateurs de consulter des offres
-                    d&apos;emploi et de postuler à ces offres. Les utilisateurs
-                    peuvent également créer un compte et publier des offres
-                    d&apos;emploi.
-                  </p>
+                <img className={styles.card__img} src="JOB.png" alt="" />
+                <div className={styles.card__content}>
+                  <h2 className={styles.card__header}>Symfony/PHP</h2>
+                  <div className={styles.card__text}>
+                    <p>
+                      Ce site permet aux utilisateurs de consulter des offres
+                      d&apos;emploi et de postuler à ces offres. Les
+                      utilisateurs peuvent également créer un compte et publier
+                      des offres d&apos;emploi.
+                    </p>
+                  </div>
+                  <a
+                    href="https://searchjob.osc-fr1.scalingo.io"
+                    target="_blank"
+                  >
+                    <button className={styles.card__btn}>
+                      Explore <span>&rarr;</span>
+                    </button>
+                  </a>
                 </div>
-                <a href="https://searchjob.osc-fr1.scalingo.io" target="_blank">
-                  <button className={styles.card__btn}>
-                    Explore <span>&rarr;</span>
-                  </button>
-                </a>
               </div>
             </div>
           </div>
@@ -234,7 +216,7 @@ export default function About() {
 
       {/* Page de contact */}
       <section id="contact">
-        <div className={styles.container}>
+        <div className={styles.container_formulaire}>
           <div className={classNames(styles.formulaire, styles.center)}>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
               <label>Name</label>

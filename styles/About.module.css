@@ -1,14 +1,35 @@
 .all {
   height: 100%;
-  padding-left: 88px;
+  
 }
-
+/* partie sur la presentation */
 .container {
   display: flex;
   justify-content: space-around;
-  padding-top: 10%;
+  padding-left: 88px;
+  height: 100vh; 
+  position: relative;
+  background-image: url('/background/space.jpg');
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; /* Ajout de cette ligne pour supprimer la marge en bas */
+
 }
 
+.container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%; /* Ajuster la hauteur du dégradé */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
+  backdrop-filter: blur(3px); /* Ajuster l'effet de flou au besoin */
+}
 .meContainer {
   color: #EEEEEE;
   display: flex;
@@ -20,7 +41,7 @@
   word-spacing: 0.2em;
 }
 
-.picture {
+.profil_picture {
   display: flex;
   justify-content: flex-end;
   width: 325px;
@@ -40,17 +61,26 @@
   text-align: justify;
 }
 
+/* partie sur les hardskill */
+.hardskill {
+  background-color: black;
+  margin-top: 0; /* Ajout de cette ligne pour supprimer la marge en haut */
+  padding-bottom: 50px;
+}
+
 .title {
   display: flex;
   font-family: serif;
   margin-left: 460px;
   font-size: 40px;
   margin-bottom: 20px;
+  padding-top: 50px;
   color: white;
   margin-top: 45px;
+  margin-top: 0; /* Ajout de cette ligne pour supprimer la marge en haut */ 
 }
 
-.hardSkill {
+.langue {
   display: flex;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
@@ -64,67 +94,19 @@
   height: 90px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* Partie Project */
+
+.project {
+  margin-top: 0px;
+  padding-left: 88px;
+  background-image: url('/background/stars.jpg');
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+
 }
 
-.projectCard {
-  border: 2px solid #3498db;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 20px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  margin-bottom: 180.9px;
-  margin-top: 15%;
-}
-
-.projectCard:hover {
-  transform: scale(1.05);
-}
-
-.projectImage {
-  width: 100%;
-  object-fit: cover;
-}
-
-.projectName {
-  margin: 0;
-  color: #3498db;
-  font-size: 1.5em;
-}
-
-.descriptionProject {
-  margin: 8px 0;
-  color: #555;
-  font-size: 1em;
-}
-
-.modalOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modalContent {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-}
 .cards_project {
   display: flex;
   flex-wrap: wrap;
@@ -200,6 +182,8 @@
   align-items: center;
   justify-content: center;
   min-height: 85.7vh;
+  background-image: url('/background/stars.jpg');
+  
 }
 
 .center {
