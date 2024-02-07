@@ -15,6 +15,9 @@ const Sidebar = () => {
         </div>
 
         <div className={styles.theme}>
+          <Link href="#hardskill">HARDSKILL</Link>
+        </div>
+        <div className={styles.theme}>
           <Link href="#project">PROJECT</Link>
         </div>
 
@@ -25,13 +28,18 @@ const Sidebar = () => {
           <a
             href="https://www.linkedin.com/in/rayane-ouaani/"
             className={styles.linkedin}
+            target="_blank"
           >
             <FontAwesomeIcon
               icon={faLinkedin}
               title="https://www.linkedin.com/in/rayane-ouaani/"
             />
           </a>
-          <a href="https://github.com/RayaneO18" className={styles.github}>
+          <a
+            href="https://github.com/RayaneO18"
+            className={styles.github}
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faGithub}
               title="https://github.com/RayaneO18"

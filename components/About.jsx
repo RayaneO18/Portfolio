@@ -103,47 +103,54 @@ export default function About() {
           />
         </div>
       </div>
-      <div className={styles.hardskill}>
-        <div className={styles.title}>HARDSKILL</div>
-        <div className={styles.langue}>
-          <div className={styles.html}>
-            <div className={styles.langue_name}>HTML</div>
-            <img src="/langue/html.png" alt="" className={styles.logo} />
-          </div>
-          <div className={styles.css}>
-            <div>CSS</div>
-            <img src="/langue/css.png" alt="" className={styles.logo} />
-          </div>
-          <div className={styles.js}>
-            <div>JavaScript</div>
-            <img src="/langue/js.png" alt="" className={styles.logo} />
-          </div>
-          <div className={styles.react}>
-            <div>React</div>
-            <img src="/langue/react.png" alt="" className={styles.logo} />
-          </div>
-          <div className={styles.nextjs}>
-            <div>Next.js</div>
-            <img src="/langue/nextjs.png" alt="" className={styles.logo} />
-          </div>
-          <div className={styles.typescript}>
-            <div>TypeScript</div>
-            <img src="/langue/typescript.png" alt="" className={styles.logo} />
-          </div>
-          <div className={styles.php}>
-            <div>PHP</div>
-            <img src="/langue/php.png" alt="" className={styles.logo} />
-          </div>
-          <div className={styles.symfony}>
-            <div>Symfony</div>
-            <img src="/langue/symfony.png" alt="" className={styles.logo} />
-          </div>
-          <div className={styles.mysql}>
-            <div>MySQL</div>
-            <img src="/langue/mysql.png" alt="" className={styles.logo} />
+      {/* section hardskill*/}
+      <section id="hardskill">
+        <div className={styles.hardskill}>
+          <div className={styles.title}>HARDSKILL</div>
+          <div className={styles.langue}>
+            <div className={styles.html}>
+              <div className={styles.langue_name}>HTML</div>
+              <img src="/langue/html.png" alt="" className={styles.logo} />
+            </div>
+            <div className={styles.css}>
+              <div>CSS</div>
+              <img src="/langue/css.png" alt="" className={styles.logo} />
+            </div>
+            <div className={styles.js}>
+              <div>JavaScript</div>
+              <img src="/langue/js.png" alt="" className={styles.logo} />
+            </div>
+            <div className={styles.react}>
+              <div>React</div>
+              <img src="/langue/react.png" alt="" className={styles.logo} />
+            </div>
+            <div className={styles.nextjs}>
+              <div>Next.js</div>
+              <img src="/langue/nextjs.png" alt="" className={styles.logo} />
+            </div>
+            <div className={styles.typescript}>
+              <div>TypeScript</div>
+              <img
+                src="/langue/typescript.png"
+                alt=""
+                className={styles.logo}
+              />
+            </div>
+            <div className={styles.php}>
+              <div>PHP</div>
+              <img src="/langue/php.png" alt="" className={styles.logo} />
+            </div>
+            <div className={styles.symfony}>
+              <div>Symfony</div>
+              <img src="/langue/symfony.png" alt="" className={styles.logo} />
+            </div>
+            <div className={styles.mysql}>
+              <div>MySQL</div>
+              <img src="/langue/mysql.png" alt="" className={styles.logo} />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* section Projet */}
       <section id="project">
@@ -214,7 +221,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Page de contact */}
+      {/* section page de contact */}
       <section id="contact">
         <div className={styles.container_formulaire}>
           <div className={classNames(styles.formulaire, styles.center)}>
