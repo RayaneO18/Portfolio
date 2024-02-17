@@ -155,7 +155,7 @@ export default function About() {
       {/* section Projet */}
       <section id="project">
         <div className={styles.project}>
-          <div className={styles.title}>PROJECT</div>
+          <div className={styles.title_project}>PROJECT</div>
 
           <div className={styles.cards_project}>
             {/* Premiere card */}

@@ -63,21 +63,24 @@
 
 /* partie sur les hardskill */
 .hardskill {
-  background-color: black;
+  /* background-color: black; */
+  background-image: url('/background/gaz.jpg');
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center center;
   margin-top: 0; /* Ajout de cette ligne pour supprimer la marge en haut */
-  padding-bottom: 50px;
+  padding-bottom: 470px;
 }
 
 .title {
+  padding-top: 40px;
+  margin-top: 0; /* Ajout de cette ligne pour supprimer la marge en haut */ 
+  margin-bottom: 20px;
+  justify-content: center;
   display: flex;
   font-family: serif;
-  margin-left: 460px;
   font-size: 40px;
-  margin-bottom: 20px;
-  padding-top: 50px;
   color: white;
-  margin-top: 45px;
-  margin-top: 0; /* Ajout de cette ligne pour supprimer la marge en haut */ 
 }
 
 .langue {
@@ -99,18 +102,29 @@
 
 .project {
   margin-top: 0px;
+  padding-bottom: 14px;
   padding-left: 88px;
-  background-image: url('/background/stars.jpg');
+  background-image: url('/background/montagne.jpg');
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center center;
-
+  padding-bottom: 50px;
 }
 
+.title_project {
+  padding-top: 15px;
+  margin-top: 0; /* Ajout de cette ligne pour supprimer la marge en haut */ 
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  font-family: serif;
+  font-size: 40px;
+  color: white;
+}
 .cards_project {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 88px;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -127,11 +141,11 @@
 }
 
 
-      
-      .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-      }
+    
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
       
       .card__img {
         width: 100%;
@@ -183,6 +197,10 @@
   justify-content: center;
   min-height: 85.7vh;
   background-image: url('/background/stars.jpg');
+  padding-top: 55px;
+  padding-bottom: 70px;
+
+
 
 }
 
@@ -247,9 +265,6 @@
   margin-top: 10px;
 
 }
-
-
-
 
 
 
