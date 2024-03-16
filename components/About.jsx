@@ -1,5 +1,6 @@
 import styles from "@/styles/About.module.css";
 import React, { useRef, useState } from "react";
+import Image from 'next/image';
 import emailjs from "@emailjs/browser";
 import classNames from "classnames";
 
@@ -96,10 +97,11 @@ export default function About() {
           </div>
         </div>
         <div>
-          <img
-            src="profile_picture.jpg"
+          <Image
+            src="/profile_picture.jpg"
             alt=""
             className={styles.profil_picture}
+            width={1000} height={1}
           />
         </div>
       </div>
@@ -110,43 +112,46 @@ export default function About() {
           <div className={styles.langue}>
             <div className={styles.html}>
               <div className={styles.langue_name}>HTML</div>
-              <img src="/langue/html.png" alt="" className={styles.logo} />
+              <Image src="/langue/html.png" alt="" className={styles.logo} width={100} height={1}/>
+
+
             </div>
             <div className={styles.css}>
               <div>CSS</div>
-              <img src="/langue/css.png" alt="" className={styles.logo} />
+              <Image src="/langue/css.png" alt="" className={styles.logo}width={100} height={1} />
             </div>
             <div className={styles.js}>
               <div>JavaScript</div>
-              <img src="/langue/js.png" alt="" className={styles.logo} />
+              <Image src="/langue/js.png" alt="" className={styles.logo} width={100} height={1}/>
             </div>
             <div className={styles.react}>
               <div>React</div>
-              <img src="/langue/react.png" alt="" className={styles.logo} />
+              <Image src="/langue/react.png" alt="" className={styles.logo} width={100} height={1}/>
             </div>
             <div className={styles.nextjs}>
               <div>Next.js</div>
-              <img src="/langue/nextjs.png" alt="" className={styles.logo} />
+              <Image src="/langue/nextjs.png" alt="" className={styles.logo} width={100} height={1}/>
             </div>
             <div className={styles.typescript}>
               <div>TypeScript</div>
-              <img
+              <Image
                 src="/langue/typescript.png"
                 alt=""
                 className={styles.logo}
+                width={100} height={1}
               />
             </div>
             <div className={styles.php}>
               <div>PHP</div>
-              <img src="/langue/php.png" alt="" className={styles.logo} />
+              <Image src="/langue/php.png" alt="" className={styles.logo}width={100} height={1} />
             </div>
             <div className={styles.symfony}>
               <div>Symfony</div>
-              <img src="/langue/symfony.png" alt="" className={styles.logo} />
+              <Image src="/langue/symfony.png" alt="" className={styles.logo} width={100} height={1}/>
             </div>
             <div className={styles.mysql}>
               <div>MySQL</div>
-              <img src="/langue/mysql.png" alt="" className={styles.logo} />
+              <Image src="/langue/mysql.png" alt="" className={styles.logo} width={100} height={1}/>
             </div>
           </div>
         </div>
@@ -164,10 +169,11 @@ export default function About() {
                 <h1 className={styles.card__header}>Moviz</h1>
                 <br />
 
-                <img
+                <Image
                   className={styles.card__img}
-                  src="MOVIZ.png"
+                  src="/MOVIZ.png"
                   alt="image Moviz"
+                  width={1000} height={1}
                 />
                 <div className={styles.card__content}>
                   <h2 className={styles.card__header}>React/JS</h2>
@@ -195,7 +201,7 @@ export default function About() {
                 <h1 className={styles.card__header}>SearchJob</h1>
                 <br />
 
-                <img className={styles.card__img} src="JOB.png" alt="" />
+                <Image className={styles.card__img} src="/JOB.png" alt="" width={1000} height={1}/>
                 <div className={styles.card__content}>
                   <h2 className={styles.card__header}>Symfony/PHP</h2>
                   <div className={styles.card__text}>
