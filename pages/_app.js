@@ -1,10 +1,11 @@
+import About from "@/components/About";
 import Sidebar from "../components/Sidebar";
 import "@/styles/globals.css";
 
-export default function App({ Component, pageProps }) {
+export default function App() {
   return (
     <>
-      <Component {...pageProps} />
+      <About />
       <Sidebar />
     </>
   );
